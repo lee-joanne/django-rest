@@ -61,7 +61,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'DEV' in os.eivron
+DEBUG = 'DEV' in os.environ
 
 ALLOWED_HOSTS = [
     'dfi-example-project.herokuapp.com',
@@ -150,7 +150,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
-    } if 'DEV' is os.environ else dj_database_url.parse(
+    } if 'DEV' in os.environ else dj_database_url.parse(
         os.environ.get('DATABASE_URL')
     )
 }
