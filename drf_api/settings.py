@@ -65,7 +65,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = [
     os.environ.get('ALLOWED_HOST'),
-    'localhost', '8000-leejoanne-djangorest-vsvc5bvmrcm.ws-us103.gitpod.io', '8000-leejoanne-djangorest-vsvc5bvmrcm.ws-us104.gitpod.io'
+    'localhost', '8000-leejoanne-djangorest-vsvc5bvmrcm.ws-us103.gitpod.io', '8000-leejoanne-djangorest-vsvc5bvmrcm.ws-us104.gitpod.io', '8000-leejoanne-djangorest-vsvc5bvmrcm.ws-us105.gitpod.io'
 ]
 
 CORS_ALLOWED_ORIGINS = [
